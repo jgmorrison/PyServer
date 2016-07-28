@@ -3,7 +3,7 @@ import logging
 import socket
 
 config = configparser.ConfigParser()
-config.read("conf.ini")
+config.read("/Users/jmorrison/pyserver/pyserver/conf.ini")
 
 logging.basicConfig(filename="server.log", level=logging.INFO)
 
