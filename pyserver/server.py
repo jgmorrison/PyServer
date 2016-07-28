@@ -28,7 +28,7 @@ def server_loop(client):
         else:
             file = open(html_page, "rb")
     except IOError:
-        file = open("404.html", "rb")
+        file = open(config['DEFAULT']['404'], "rb")
     f = file.read()
     client.send(f)
     client.close()
