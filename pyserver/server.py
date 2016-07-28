@@ -16,18 +16,16 @@ server.listen(1)
 
 print("Listening on {}:{}".format(ip, port))
 
-html = config['DEFAULT']['INDEXFILE']
-
 
 def server_loop(client):
     request = client.recv(1024).decode("UTF-8")
     print("Request received: {}".format(request))
     logging.info("Request from {}:{}\n{}".format(ip, port, request))
-    html = request[request.find("/") + 1:request.find('HTTP') - 1]
-    if not html:
-        file = open("index.html", "rb")
+    html_page = request[request.find("/") + 1:request.find('HTTP') - 1]
+    if not html_page:
+        file = open(config['DEFAULT']['DEFAULT_HTML'], "rb")
     else:
-        file = open(html, "rb")
+        file = open(html_page, "rb")
     f = file.read()
     client.send(f)
     client.close()
