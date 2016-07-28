@@ -5,7 +5,7 @@ import socket
 config = configparser.ConfigParser()
 config.read("/Users/jmorrison/pyserver/pyserver/conf.ini")
 
-logging.basicConfig(filename="server.log", level=logging.INFO)
+logging.basicConfig(filename=config['DEFAULT']['LOG'], level=logging.INFO)
 
 ip = config['DEFAULT']['BIND_IP']
 port = int(config['DEFAULT']['BIND_PORT'])

@@ -1,27 +1,4 @@
 INFO:root:Request from 0.0.0.0:8080
-GET //oopojpjpo.html HTTP/1.1
-Host: localhost:8080
-Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8
-Connection: keep-alive
-Cookie: wp-settings-time-1=1462561165
-User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_6) AppleWebKit/601.7.7 (KHTML, like Gecko) Version/9.1.2 Safari/601.7.7
-Accept-Language: en-us
-Cache-Control: max-age=0
-Accept-Encoding: gzip, deflate
-
-
-INFO:root:Request from 0.0.0.0:8080
-GET //oopojpjpo.html HTTP/1.1
-Host: localhost:8080
-Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8
-Cookie: wp-settings-time-1=1462561165
-User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_6) AppleWebKit/601.7.7 (KHTML, like Gecko) Version/9.1.2 Safari/601.7.7
-Accept-Language: en-us
-Accept-Encoding: gzip, deflate
-Connection: keep-alive
-
-
-INFO:root:Request from 0.0.0.0:8080
 GET / HTTP/1.1
 Host: localhost:8080
 Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8
@@ -47,11 +24,21 @@ INFO:root:Request from 0.0.0.0:8080
 GET / HTTP/1.1
 Host: localhost:8080
 Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8
-Connection: keep-alive
 Cookie: wp-settings-time-1=1462561165
 User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_6) AppleWebKit/601.7.7 (KHTML, like Gecko) Version/9.1.2 Safari/601.7.7
 Accept-Language: en-us
-Cache-Control: max-age=0
 Accept-Encoding: gzip, deflate
+Connection: keep-alive
+
+
+INFO:root:Request from 0.0.0.0:8080
+GET /pljfpljma HTTP/1.1
+Host: localhost:8080
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8
+Cookie: wp-settings-time-1=1462561165
+User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_6) AppleWebKit/601.7.7 (KHTML, like Gecko) Version/9.1.2 Safari/601.7.7
+Accept-Language: en-us
+Accept-Encoding: gzip, deflate
+Connection: keep-alive
 
 
