@@ -22,10 +22,13 @@ def server_loop(client):
     print("Request received: {}".format(request))
     logging.info("Request from {}:{}\n{}".format(ip, port, request))
     html_page = request[request.find("/") + 1:request.find('HTTP') - 1]
-    if not html_page:
-        file = open(config['DEFAULT']['DEFAULT_HTML'], "rb")
-    else:
-        file = open(html_page, "rb")
+    try:
+        if not html_page:
+            file = open(config['DEFAULT']['DEFAULT_HTML'], "rb")
+        else:
+            file = open(html_page, "rb")
+    except IOError:
+        file = open("404.html", "rb")
     f = file.read()
     client.send(f)
     client.close()
